@@ -12,7 +12,15 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('welcome', 'WelcomeController@index')->name('welcome');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+<<<<<<< HEAD
+=======
+Route::patch('/editarUsr', 'UsuarioController@update')->name('editarUsr');
+Route::get('/pagEditar', 'UsuarioController@pagEditar')->name('pagEditar');
+Route::post('/deletarUsr', 'UsuarioController@destroy')->name('deletarUsr');
+Route::get('/pagDeletar', 'UsuarioController@pagDeletar')->name('pagDeletar');
+>>>>>>> alteracoes
