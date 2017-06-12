@@ -13,7 +13,7 @@
                   <div class="alert alert-danger" role="alert">
                     <strong>Tem certeza que deseja excluir sua conta?</strong>
                   </div>
-	                 <button type="submit" class="btn btn-danger">Deletar</button>
+	                 <button type="submit" class="btn btn-danger pull-center">Deletar</button>
                 </form>
                 </div>
             </div>

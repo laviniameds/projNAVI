@@ -108,7 +108,7 @@
 
                             <div class="col-md-6">
                                 <input id="cep" type="text" class="form-control" name="cep" value="{{ old('cep') }}"
-                                data-mask="00000-000" pattern="\d{5}-\d{3}" required>
+                                data-mask="00000-000" maxlength="9" pattern="\d{5}-\d{3}" required>
 
                                 @if ($errors->has('cep'))
                                     <span class="help-block">

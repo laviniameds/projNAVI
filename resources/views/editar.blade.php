@@ -226,7 +226,6 @@
                             @endif
                         </div>
                     </div>
-
                     <div class="form-group{{ $errors->has('estado') ? ' has-error' : '' }}">
                         <label for="estado" class="col-md-4 control-label">Estado</label>
 
@@ -241,15 +240,16 @@
                             @endif
                         </div>
                     </div>
-
                     <div class="form-group">
                         <div class="col-md-6 col-md-offset-4">
-                            <button type="submit" class="btn btn-primary">
-                                Editar
+                            <br>
+                            <div class="btn-toolbar">
+                            <button type="submit" class="btn btn-primary pull-left">
+                                Atualizar
                             </button>
-                        </div>
-                        <div class="col-md-6 col-md-offset-4">
-                            <a href="/pagDeletar" type="submit" class="btn btn-danger">Deletar</a>
+                            <a href="" type="submit" class="btn btn-outline-info">Mudar Senha</a>
+                            <a href="/pagDeletar" type="submit" class="btn btn-danger">Deletar Conta</a>
+                            </div>
                         </div>
                     </div>
                   </form>
