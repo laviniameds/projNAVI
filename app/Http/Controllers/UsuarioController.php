@@ -22,6 +22,11 @@ class UsuarioController extends Controller
       return view ('editar');
     }
 
+    public function pagDeletar()
+    {
+      return view ('deletar');
+    }
+
     public function update()
     {
         $this->validate(request(), [
@@ -63,7 +68,7 @@ class UsuarioController extends Controller
       return redirect()->home();
     }
 
-    public function destroy ()
+    public function destroy()
     {
         $user = User::find(request('id'));
         $user->delete();

@@ -109,7 +109,7 @@
                             <label>Outro
                             <input id="genero" type="radio" class="form-control" name="genero" value="Outro" >
                             </label>
-                          @else Auth::user()->genero === 'Outro'
+                            @else
                             <label>Masculino
                             <input id="genero" type="radio" class="form-control" name="genero" value="Masculino">
                             </label>
@@ -247,6 +247,9 @@
                             <button type="submit" class="btn btn-primary">
                                 Editar
                             </button>
+                        </div>
+                        <div class="col-md-6 col-md-offset-4">
+                            <a href="/pagDeletar" type="submit" class="btn btn-danger">Deletar</a>
                         </div>
                     </div>
                   </form>
