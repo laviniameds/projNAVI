@@ -63,7 +63,7 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
-                                    <li><a href="{{ url('/perfil') }}">Editar Informações</a></li>
+                                    <li><a href="{{ url('/pagEditar') }}">Editar Informações</a></li>
                                 </ul>
                             </li>
                         @endif

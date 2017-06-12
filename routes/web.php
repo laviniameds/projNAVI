@@ -16,3 +16,5 @@ Route::get('/', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::patch('/editarUsr', 'UsuarioController@update')->name('editarUsr');
+Route::get('/pagEditar', 'UsuarioController@pagEditar')->name('pagEditar');
