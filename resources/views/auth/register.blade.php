@@ -11,7 +11,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('nome') ? ' has-error' : '' }}">
-                            <label for="nome" class="col-md-4 control-label">Name</label>
+                            <label for="nome" class="col-md-4 control-label">Nome</label>
 
                             <div class="col-md-6">
                                 <input id="nome" type="text" class="form-control" name="nome" value="{{ old('nome') }}" required autofocus>
@@ -38,17 +38,6 @@
                             </div>
                         </div>
 
-<<<<<<< HEAD
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-=======
                         <div class="form-group{{ $errors->has('cpf') ? ' has-error' : '' }}">
                             <label for="cpf" class="col-md-4 control-label">CPF</label>
 
@@ -59,14 +48,11 @@
                                 @if ($errors->has('cpf'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('cpf') }}</strong>
->>>>>>> alteracoes
                                     </span>
                                 @endif
                             </div>
                         </div>
 
-<<<<<<< HEAD
-=======
                         <div class="form-group{{ $errors->has('rg') ? ' has-error' : '' }}">
                             <label for="rg" class="col-md-4 control-label">RG</label>
 
@@ -101,13 +87,13 @@
 
                             <div class="col-md-6">
                                 <label>Masculino
-                                <input id="genero" type="radio" class="form-control" name="genero" value="Masculino">
+                                <input id="genero" type="radio" class="form-control" name="genero" value="Masculino" required>
                                 </label>
                                 <label>Feminino
-                                <input id="genero" type="radio" class="form-control" name="genero" value="Feminino" >
+                                <input id="genero" type="radio" class="form-control" name="genero" value="Feminino" required>
                                 </label>
                                 <label>Outro
-                                <input id="genero" type="radio" class="form-control" name="genero" value="Outro" >
+                                <input id="genero" type="radio" class="form-control" name="genero" value="Outro" required >
                                 </label>
                                 @if ($errors->has('genero'))
                                     <span class="help-block">
@@ -231,8 +217,6 @@
                             </div>
                         </div>
 
-
->>>>>>> alteracoes
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Senha</label>
 
