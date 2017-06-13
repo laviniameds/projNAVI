@@ -32,7 +32,7 @@
 
                     <li class="list-group-item">
                       <strong class="col-sm-6 text-right">Data de nascimento:</strong>
-                      {{ Auth::user()->nasc }}
+                      <?php echo date('d/m/Y', strtotime(Auth::user()->nasc)); ?>
                     </li>
 
                     <li class="list-group-item">
