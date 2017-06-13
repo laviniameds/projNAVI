@@ -37,7 +37,7 @@ $(document).ready(function() {
                                 $("#rua").val(dados.logradouro);
                                 $("#bairro").val(dados.bairro);
                                 $("#cidade").val(dados.localidade);
-                                $("#estado").val(dados.estado);
+                                $("#estado").val(dados.uf);
                             } //end if.
                             else {
                                 //CEP pesquisado não foi encontrado.
