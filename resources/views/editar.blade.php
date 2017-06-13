@@ -247,7 +247,7 @@
                             <button type="submit" class="btn btn-primary pull-left">
                                 Atualizar
                             </button>
-                            <a href="" type="submit" class="btn btn-outline-info">Mudar Senha</a>
+                            <a href="/auth/password/reset" type="submit" class="btn btn-outline-info">Mudar Senha</a>
                             <a href="/pagDeletar" type="submit" class="btn btn-danger">Deletar Conta</a>
                             </div>
                         </div>
