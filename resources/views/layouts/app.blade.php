@@ -13,6 +13,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/jquery-ui.css') }}" rel="stylesheet">
+    <style> body, html{background-color: #431210;}</style>
 </head>
 <body>
     <div id="app">
@@ -29,7 +30,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a style="color: #431210; font-weight: bold;" class="navbar-brand" href="{{ url('/') }}">
                         Random Ice Cream
                     </a>
                 </div>
@@ -44,8 +45,8 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Cadastro</a></li>
+                            <li><a style="color: #431210; font-weight: bold;" href="{{ route('login') }}">Login</a></li>
+                            <li><a style="color: #431210; font-weight: bold;" href="{{ route('register') }}">Cadastro</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -53,6 +54,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                    <li><a href="{{ url('/pagEditar') }}">Editar Informações</a></li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
@@ -64,7 +66,6 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
-                                    <li><a href="{{ url('/pagEditar') }}">Editar Informações</a></li>
                                 </ul>
                             </li>
                         @endif

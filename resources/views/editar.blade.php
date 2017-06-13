@@ -250,14 +250,19 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-6 col-md-offset-4">
+                        <label for="estado" class="col-md-4 control-label">Senha</label>
+                        <div class="col-md-6">
+                          <a href="/auth/password/reset" type="submit" class="btn btn-outline-info pull-right">Mudar Senha</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-0">
                             <br>
                             <div class="btn-toolbar">
-                            <button type="submit" class="btn btn-primary pull-left">
-                                Atualizar
-                            </button>
-                            <a href="/auth/password/reset" type="submit" class="btn btn-outline-info">Mudar Senha</a>
-                            <a href="/pagDeletar" type="submit" class="btn btn-danger">Deletar Conta</a>
+                            <a href="/home" type="submit" class="btn btn-outline-info pull-left">Cancelar</a>
+                            <button type="submit" class="btn btn-primary pull-right">  Atualizar   </button>
+                            <br><br><br><br><br>
+                            <a href="/pagDeletar" type="submit" class="btn btn-danger pull-right">Deletar Conta</a>
                             </div>
                         </div>
                     </div>
