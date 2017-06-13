@@ -59,8 +59,9 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-6 col-md-offset-5">
-                                <button type="submit" class="btn btn-primary">
+                            <div class="col-md-6 col-md-offset-3">
+                              <a href="/pagEditar" type="submit" class="btn btn-outline-info pull-left">Cancelar</a>
+                                <button type="submit" class="btn btn-primary pull-right">
                                     Atualizar
                                 </button>
                             </div>
