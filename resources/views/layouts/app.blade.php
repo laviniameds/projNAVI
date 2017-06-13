@@ -30,7 +30,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        Cadastro
+                        Random Ice Cream
                     </a>
                 </div>
 
