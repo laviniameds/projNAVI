@@ -86,14 +86,17 @@
                             <label for="genero" class="col-md-4 control-label">Gênero</label>
 
                             <div class="col-md-6">
-                                <label>Masculino
-                                <input id="genero" type="radio" class="form-control" name="genero" value="Masculino" required>
+                                <label>
+                                <input id="genero" type="radio"  name="genero" value="Masculino" required>
+                                Masculino
                                 </label>
-                                <label>Feminino
-                                <input id="genero" type="radio" class="form-control" name="genero" value="Feminino" required>
+                                <label>
+                                <input id="genero" type="radio" name="genero" value="Feminino" required>
+                                Feminino
                                 </label>
-                                <label>Outro
-                                <input id="genero" type="radio" class="form-control" name="genero" value="Outro" required >
+                                <label>
+                                <input id="genero" type="radio" name="genero" value="Outro" required>
+                                Outro
                                 </label>
                                 @if ($errors->has('genero'))
                                     <span class="help-block">

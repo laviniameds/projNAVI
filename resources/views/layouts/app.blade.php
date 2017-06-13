@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/jquery-ui.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -78,6 +79,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/viaCEP.js') }}"></script>
+    <script src="{{ asset('js/outro.js') }}"></script>
     <script src="{{ asset('js/jquery.mask.min.js') }}"></script>
 </body>
 </html>

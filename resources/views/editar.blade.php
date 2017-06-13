@@ -90,35 +90,44 @@
                         <label for="genero" class="col-md-4 control-label">Gênero</label>
                         <div class="col-md-6">
                           @if (Auth::user()->genero === 'Masculino')
-                            <label>Masculino
-                            <input id="genero" type="radio" class="form-control" checked name="genero" value="Masculino">
+                            <label>
+                            <input id="genero" type="radio" checked name="genero" value="Masculino" required>
+                            Masculino
                             </label>
-                            <label>Feminino
-                            <input id="genero" type="radio" class="form-control" name="genero" value="Feminino" >
+                            <label>
+                            <input id="genero" type="radio" name="genero" value="Feminino" required>
+                            Feminino
                             </label>
-                            <label>Outro
-                            <input id="genero" type="radio" class="form-control" name="genero" value="Outro" >
+                            <label>
+                            <input id="genero" type="radio" name="genero" value="Outro" required>
+                            Outro
                             </label>
                           @elseif (Auth::user()->genero  === 'Feminino')
-                            <label>Masculino
-                            <input id="genero" type="radio" class="form-control" name="genero" value="Masculino">
+                            <label>
+                            <input id="genero" type="radio"  name="genero" value="Masculino" required>
+                            Masculino
                             </label>
-                            <label>Feminino
-                            <input id="genero" type="radio" class="form-control" checked name="genero" value="Feminino" >
+                            <label>
+                            <input id="genero" type="radio" checked name="genero" value="Feminino" required>
+                            Feminino
                             </label>
-                            <label>Outro
-                            <input id="genero" type="radio" class="form-control" name="genero" value="Outro" >
+                            <label>
+                            <input id="genero" type="radio" name="genero" value="Outro" required>
+                            Outro
                             </label>
                             @else
-                            <label>Masculino
-                            <input id="genero" type="radio" class="form-control" name="genero" value="Masculino">
-                            </label>
-                            <label>Feminino
-                            <input id="genero" type="radio" class="form-control"  name="genero" value="Feminino" >
-                            </label>
-                            <label>Outro
-                            <input id="genero" type="radio" class="form-control" checked name="genero" value="Outro" >
-                            </label>
+                              <label>
+                              <input id="genero" type="radio" name="genero" value="Masculino" required>
+                              Masculino
+                              </label>
+                              <label>
+                              <input id="genero" type="radio" name="genero" value="Feminino" required>
+                              Feminino
+                              </label>
+                              <label>
+                              <input id="genero" type="radio" checked name="genero" value="Outro" required>
+                              Outro
+                              </label>
                           @endif
                             @if ($errors->has('genero'))
                                 <span class="help-block">
